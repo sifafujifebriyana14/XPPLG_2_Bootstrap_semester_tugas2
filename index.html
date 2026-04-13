@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabel Data Siswa</title>
+  <!-- Bootstrap 5.3 CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-backpack3" viewBox="0 0 16 16">
+  <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+  <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c.465.165.904.385 1.308.653l.416-1.247a1 1 0 0 1 1.748-.284l.77 1.027a1 1 0 0 1 .15.917l-.803 2.407C13.854 6.49 14 7.229 14 8v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8c0-.771.146-1.509.41-2.186l-.802-2.407a1 1 0 0 1 .15-.917l.77-1.027a1 1 0 0 1 1.748.284l.416 1.247A6 6 0 0 1 6 2.34ZM7 2v.083a6 6 0 0 1 2 0V2a1 1 0 1 0-2 0m5.941 2.595.502-1.505-.77-1.027-.532 1.595q.447.427.8.937M3.86 3.658l-.532-1.595-.77 1.027.502 1.505q.352-.51.8-.937M8 3a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5"/>
+</svg>SMK N TENGARAN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <nav style="text-align: right;">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#visimisi">Visi Misi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#datasiswa">Data Siswa</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Jurusan</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="jurusan/pplg.html">PPLG</a></li>
+            <li><a class="dropdown-item" href="jurusan/tkj.html">TKJT</a></li>
+            <li><a class="dropdown-item" href="jurusan/kuliner.html">KULINER</a></li>
+            <li><a class="dropdown-item" href="jurusan/busana.html">BUSANA</a></li>
+            <li><a class="dropdown-item" href="jurusan/otomotif.html">OTOMOTIF</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .hero {
+        background-image: url(image/download\ \(11\).jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        min-height: 70vh;
+    }
+</style>
+
+<!--section-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Custom styling untuk menyamakan dengan gambar */
+        .partnership-section {
+            background-color: #2b67f6; /* Warna biru sesuai gambar */
+            color: white;
+            padding: 60px 0;
+        }
+
+        .partnership-section h2 {
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        .partnership-section p {
+            font-size: 0.9rem;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            opacity: 0.9;
+        }
+
+        /* Styling logo agar rapi dan berwarna putih (efek grayscale/brightness) */
+        .logo-container img {
+            max-height: 40px;
+            width: auto;
+            filter: brightness(0) invert(1); /* Membuat logo berwarna putih */
+            transition: transform 0.3s;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <!--formulir-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #f8f9fa; font-family: sans-serif; }
+        .contact-section { padding: 60px 0; }
+        .contact-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .info-sidebar {
+            background-color: #fcfcfc;
+            padding: 40px;
+            border-right: 1px solid #eee;
+        }
+        .info-item { display: flex; align-items: flex-start; margin-bottom: 25px; }
+        .icon-box {
+            width: 45px;
+            height: 45px;
+            background-color: #3b71fe;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        .info-text h6 { margin: 0; font-weight: bold; font-size: 0.95rem; }
+        .info-text p { margin: 0; color: #777; font-size: 0.85rem; }
+        .form-container { padding: 40px; flex: 1; }
+        .form-subtitle { color: #3b71fe; font-weight: bold; font-size: 0.8rem; letter-spacing: 1px; }
+        .form-title { font-weight: 800; margin-bottom: 30px; }
+        .form-control {
+            border: none;
+            border-bottom: 1px solid #ddd;
+            border-radius: 0;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #3b71fe;
+        }
+        .btn-kirim {
+            background-color: #3b71fe;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 5px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+  <div id="beranda"></div>
+ <div class="hero text-center">
+        <div class="overlay d-flex justify-content-center align-items-center text center">
+            <div class="text-white">
+                <h1 class="display-5 fw-bold">Sistem Manajemen Siswa</h1>
+                <p class="fs-4">Kelola data kehadiran, profil, dan status akademik siswa dengan lebih mudah dan efisien.</p>
+                <button class="btn btn-primary btn-lg">Lihat Tabel</button>
+                <button type="button" class="btn btn-outline-light position-relative">
+                Panduan
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    Baru
+                </span>
+            </button>
+            </div>
+        </div>
+    </div>
+  </body>
+<body class="bg-light">
+
+  <div class="container mt-5">
+    <!--Breadcrumb-->
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="#">Visi Misi</a></li>
+        <li class="breadcrumb-item"><a href="#">Jurusan</a></li>
+        <li class="breadcrumb-item active">Data Siswa 2026</a></li>
+      </ol>
+    </nav>
+    <!--grid-->
+    <div id="beranda"></div>
+    <div class="container py-5">
+  <h2 class="text-center fw-bold mb-5">Mengapa SMK Digital</h2>
+
+  <div class="row g-4 text-center">
+
+    <!-- Lulusan -->
+    <div class="col-md-4">
+      <div class="p-4 shadow-sm rounded bg-light h-100">
+           <i class="bi bi-mortarboard-fill fs-1 text-primary mb-3"></i>
+        <h5 class="fw-bold">Lulusan</h5>
+        <p class="text-muted small">
+          SMK Digital melahirkan banyak siswa yang siap kerja maupun lanjut ke perguruan tinggi.
+        </p>
+      </div>
+    </div>
+
+    <!-- Prestasi -->
+    <div class="col-md-4">
+      <div class="p-4 shadow-sm rounded bg-light h-100">
+        <i class="bi bi-trophy-fill fs-1 text-primary mb-3"></i>
+        <h5 class="fw-bold">Prestasi</h5>
+        <p class="text-muted small">
+          Siswa berprestasi di tingkat lokal hingga internasional dalam berbagai bidang.
+        </p>
+      </div>
+    </div>
+
+    <!-- Fasilitas -->
+    <div class="col-md-4">
+      <div class="p-4 shadow-sm rounded bg-light h-100">
+        <i class="bi bi-building fs-1 text-primary mb-3"></i>
+        <h5 class="fw-bold">Fasilitas</h5>
+        <p class="text-muted small">
+          Lingkungan belajar nyaman dengan fasilitas lengkap dan modern.
+        </p>
+      </div>
+    </div>
+
+    <!-- Kurikulum -->
+    <div class="col-md-6">
+      <div class="p-4 shadow-sm rounded bg-light h-100">
+        <i class="bi bi-book-fill fs-1 text-primary mb-3"></i>
+        <h5 class="fw-bold">Kurikulum</h5>
+        <p class="text-muted small">
+          Kurikulum mengikuti perkembangan industri dan teknologi terbaru.
+        </p>
+      </div>
+    </div>
+
+    <!-- Budaya Industri -->
+    <div class="col-md-6">
+      <div class="p-4 shadow-sm rounded bg-light h-100">
+        <i class="bi bi-people-fill fs-1 text-primary mb-3"></i>
+        <h5 class="fw-bold">Budaya Industri</h5>
+        <p class="text-muted small">
+          Siswa dibiasakan dengan budaya kerja seperti di dunia industri.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!--Visi Misi-->
+    <div id="vm"></div>
+    <div id="visimisi">
+    <div class="container my-5">
+    <h3 class="text-center mb-4">Visi & Misi Lembaga</h3>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-primary text-white text-center fw-bold">
+                    VISI SEKOLAH
+                </div>
+                <div class="card-body d-flex align-items-center justify-content-center text-center">
+                    <h5 class="card-title p-3 italic">
+                        "Menciptakan Insan Bertaqwa yang Solutif, Santun, Optimis, Lugas, Terampil dan Inovatif, Guna Menjunjung Martabat Bangsa."
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-header bg-dark text-white text-center fw-bold">
+                    MISI SEKOLAH
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="badge bg-primary rounded-pill me-2">01</span>
+                            Excellent: Meningkatkan pelayanan pada siswa dengan mengedepankan pembelajaran yang berpihak pada siswa.
+                        </li>
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="badge bg-primary rounded-pill me-2">02</span>
+                            Smart: Mengembangkan keunggulan dengan mengedepankan sikap mandiri, kreatif dan kolaboratif sesuai dengan profil pelajar pancasila.
+                        </li>
+                        <li class="list-group-item d-flex align-items-start">
+                            <span class="badge bg-primary rounded-pill me-2">03</span>
+                            Attainable: Mewujudkan sekolah sebagai wadah kreasi, inovasi untuk pengembangan ilmu pengetahuan dan teknologi.
+                        </li>
+                        <li class="list-group-item d-flex align-items-start">
+  <span class="badge bg-primary rounded-pill me-2">04</span>
+  Timebound: Menciptakan sekolah yang menerapkan perencanaan berbasis data dan melibatkan seluruh warga sekolah.
+               </li>
+    <li class="list-group-item d-flex align-items-start">
+     <span class="badge bg-primary rounded-pill me-2">05</span>
+       Actual: Mendidik dan melatih peserta didik sesuai kebutuhan dunia kerja. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+     <!-- JURUSAN -->
+    <h3 class="text-center my-5">Ringkasan Angkatan per Jurusan</h3>
+    <div class="row g-4">
+
+        <div class="row g-4 justify-content-center mb-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="image/Focused programmer coding in a dimly lit workspace with dual monitors displaying complex code at night Stock Photo.jpg" class="card-img-top" alt="PPLG" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">PPLG</h5>
+                    <p class="card-text text-muted small">Pengembangan Perangkat Lunak & Gim. Fokus pada coding, web, dan mobile apps.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 120</p>
+                    <p class="card-text"><strong>Lab:</strong> 4 Ruangan</p>
+                    <p class="card-text"><strong>Kuota Terisi (90/100)</strong></p>
+                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%"></div>
+</div>
+                </div>
+                <div class="text-end">
+                        <a href="jurusan/pplg.html" class="btn btn-outline-primary btn-sm">Baca Selengkapnya &rarr;</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="image/Página Inicial - LTG _ Inteligência em Engenharia.jpg" class="card-img-top" alt="TJKT" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">TJKT</h5>
+                    <p class="card-text text-muted small">Teknik Jaringan Komputer & Telekomunikasi. Ahli dalam infrastruktur server dan jaringan.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 115</p>
+                    <p class="card-text"><strong>Lab:</strong> 3 Ruangan</p>
+                    <p class="card-text"><strong>Kuota Terisi (89/100)</strong></p>
+                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 89%"></div>
+</div>
+                </div>
+                <div class="text-end">
+                        <a href="jurusan/tkj.html" class="btn btn-outline-primary btn-sm">Baca Selengkapnya &rarr;</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="image/download (12).jpg" class="card-img-top" alt="Kuliner" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">KULINER</h5>
+                    <p class="card-text text-muted small">Seni Kuliner & Tata Boga. Menciptakan tenaga profesional di bidang hospitality dan restoran.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 115</p>
+                    <p class="card-text"><strong>Dapur:</strong> 3 Standar Industri</p>
+                    <p class="card-text"><strong>Kuota Terisi (80/100)</strong></p>
+                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%"></div>
+</div>
+                </div>
+                <div class="text-end">
+                        <a href="jurusan/kuliner.html" class="btn btn-outline-primary btn-sm">Baca Selengkapnya &rarr;</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="image/Design Trends.jpg" class="card-img-top" alt="Busana" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">BUSANA</h5>
+                    <p class="card-text text-muted small">Desain dan Produksi Busana. Fokus pada kreativitas fashion dan teknik menjahit modern.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 90</p>
+                    <p class="card-text"><strong>Studio:</strong> 2 Workshop</p>
+                    <p class="card-text"><strong>Kuota Terisi (85/100)</strong></p>
+                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%"></div>
+</div>
+                </div>
+                <div class="text-end">
+                        <a href="jurusan/busana.html" class="btn btn-outline-primary btn-sm">Baca Selengkapnya &rarr;</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="image/3-Step Positive Parenting Program for Everyday Life_ Respond instead of Reacting to Your Child.jpg" class="card-img-top" alt="Otomotif" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">OTOMOTIF</h5>
+                    <p class="card-text text-muted small">Teknik Kendaraan Ringan. Mempelajari mesin, kelistrikan mobil, dan manajemen bengkel.</p>
+                    <p class="card-text mb-0"><strong>Siswa:</strong> 130</p>
+                    <p class="card-text"><strong>Bengkel:</strong> 1 Unit Produksi</p>
+                    <p class="card-text"><strong>Kuota Terisi (95/100)</strong></p>
+                    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%"></div>
+</div>
+                </div>
+                <div class="text-end">
+                        <a href="jurusan/otomotif.html" class="btn btn-outline-primary btn-sm">Baca Selengkapnya &rarr;</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--siswa aktif kolom-->
+<div id=datasiswa></div>
+<section class="bg-primary text-white py-4">
+    <div class="container">
+        <div class="row text-center align-items-center">
+            
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-people-fill fs-1 me-3"></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">2329</h3>
+                        <p class="small mb-0">Siswa Aktif</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4 mb-md-0">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-star-fill fs-1 me-3"></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">93%</h3>
+                        <p class="small mb-0">Keterserapan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-file-earmark-text-fill fs-1 me-3"></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">A</h3>
+                        <p class="small mb-0">Akreditasi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="d-flex align-items-center justify-content-center">
+                    <i class="bi bi-diagram-3-fill fs-1 me-3"></i>
+                    <div class="text-start">
+                        <h3 class="fw-bold mb-0">130</h3>
+                        <p class="small mb-0">Mitra Kerja</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+  <!-- Judul -->
+   <div id="data"></div>
+    <div class="container mt-4 text-center">
+        <h3>Tabel Data Siswa</h3>
+        <p>kelola status dan administrasi siswa secara real-time</p>
+    </div>
+    <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+        <strong>Info!</strong> klik tombol <strong>Edit</strong> untuk mengubah data profil siswa. 
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <div class="container align-middle text-center">
+    <div class="d-flex justify-content-end">
+    <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#modalSiswa">Tambah Data Siswa</button>
+    <div class="modal fade" id="modalSiswa" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Tambah Siswa Baru</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <form>
+
+          <!-- Nama -->
+          <div class="mb-3">
+            <label class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" placeholder="Contoh: Budi Santoso">
+          </div>
+
+          <!-- Kelas -->
+          <div class="mb-3">
+            <label class="form-label">Kelas</label>
+            <select class="form-select">
+              <option selected disabled>Pilih Kelas...</option>
+              <option>X PPLG 1</option>
+              <option>X PPLG 2</option>
+              <option>X TJKT 1</option>
+              <option>X TJKT 2</option>
+            </select>
+          </div>
+
+          <!-- Foto -->
+          <div class="mb-3">
+            <label class="form-label">Foto Profil</label>
+            <input type="file" class="form-control">
+            <small class="text-muted">Format: JPG, PNG (Maks 2MB)</small>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-primary">Simpan Data</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <button class="btn btn-outline-secondary">Ekspor Ke Excel</button>
+</div>
+
+
+    <!-- Tabel Data -->
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered table-hover align-middle text-center">
+        <thead class="table-dark">
+          
+          <tr>
+            <th>No</th>
+            <th>Foto</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <div class="position-relative d-inline-block">
+        <img src="image/SEONGHYEON CORTIS.jpg" 
+             class="img-fluid rounded-circle border border-2 border-white shadow-sm" 
+             style="max-width:80px;" >
+        
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle" 
+              style="margin-left: -15px; margin-top: 10px;">
+            <span class="visually-hidden">Status</span>
+        </span>
+    </div>
+            </td>
+            <td>Seonghyeon</td>
+            <td>Cortis</td>
+            <td>
+              <span class="badge bg-success">Aktif</span>
+            </td>
+            <td>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>
+              <div class="position-relative d-inline-block">
+        <img src="image/Martin Edwards.jpg" 
+             class="img-fluid rounded-circle border border-2 border-white shadow-sm" 
+             style="max-width:80px;" >
+        
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle" 
+              style="margin-left: -15px; margin-top: 10px;">
+            <span class="visually-hidden">Status</span>
+        </span>
+    </div>
+            </td>
+            <td>Martin</td>
+            <td>Cortis</td>
+            <td>
+              <span class="badge bg-warning text-dark">Izin</span>
+            </td>
+            <td>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>
+    <div class="position-relative d-inline-block">
+        <img src="image/keonho.jpg" 
+             class="img-fluid rounded-circle border border-2 border-white shadow-sm" 
+             style="max-width:80px;" >
+        
+        <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle" 
+              style="margin-left: -15px; margin-top: 10px;">
+            <span class="visually-hidden">Status</span>
+        </span>
+    </div>
+            </td>
+            <td>Keonho</td>
+            <td>Cortis</td>
+            <td>
+              <span class="badge bg-danger">Alfa</span>
+            </td>
+            <td>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pagination -->
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-5 text-center">
+        <h3 class="text-center fw-bold">startistik kehadiran</h3> 
+        <p>kelola status dan administrasi siswa secara real-time</p>
+        <div class="progress">
+        <div class="progress-bar bg-success" style="width: 37%">37%</div>
+        <div class="progress-bar bg-warning" style="width: 33%">33%</div>
+        <div class="progress-bar bg-danger" style="width: 30%">30%</div>
+     </div>
+    </div>
+  <!--mentor-->
+<div class="container py-5">
+  <h2 class="text-center mb-2">Mentor</h2>
+  <p class="text-center text-muted mb-5">Belajar bersama mentor luar negeri yang berpengalaman</p>
+
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-3">
+      <div class="card text-center shadow-sm">
+        <img src="image/333.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Walter White</h5>
+          <p class="text-muted">Mentor Web Development</p>
+          <p class="card-text small">
+            membantu siswa web dari front-end (HTML, CSS, JS) hingga back-end (Node.js, Python)
+          </p>
+          <div>
+            <i class="fab fa-twitter mx-1"></i>
+            <i class="fab fa-facebook mx-1"></i>
+            <i class="fab fa-instagram mx-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-3">
+      <div class="card text-center shadow-sm">
+        <img src="image/Korean visual.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Sarah Jhinson</h5>
+          <p class="text-muted">Mentor Back-End Developer</p>
+          <p class="card-text small">
+            mengelola logika server dan basis data (database) agar website berfungsi dengan baik
+          </p>
+          <div>
+            <i class="fab fa-twitter mx-1"></i>
+            <i class="fab fa-facebook mx-1"></i>
+            <i class="fab fa-instagram mx-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-3">
+      <div class="card text-center shadow-sm">
+        <img src="image/Asain, face.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">William Anderson</h5>
+          <p class="text-muted">Mentor Website Builder</p>
+          <p class="card-text small">
+            menggunakan platform seperti WordPress atau Shopify untuk membangun situs tanpa coding
+          </p>
+          <div>
+            <i class="fab fa-twitter mx-1"></i>
+            <i class="fab fa-facebook mx-1"></i>
+            <i class="fab fa-instagram mx-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-3">
+      <div class="card text-center shadow-sm">
+        <img src="image/wanita walter.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Amanda Rose</h5>
+          <p class="text-muted">Mentor UI/UX Designer</p>
+          <p class="card-text small">
+            fokus pada estetika, tata letak, dan pengalaman pengguna menggunakan Figma/Adobe XD
+          </p>
+          <div>
+            <i class="fab fa-twitter mx-1"></i>
+            <i class="fab fa-facebook mx-1"></i>
+            <i class="fab fa-instagram mx-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--section container-->
+<section class="partnership-section text-center">
+    <div class="container">
+        <h2 class="mb-3">KERJA SAMA KAMI</h2>
+        <p>Membangun sinergi strategis bersama mitra terpercaya untuk menghadirkan solusi inovatif dan berkelanjutan di setiap langkah kami.</p>
+
+        <div class="row align-items-center justify-content-center g-4 logo-container">
+            <div class="col-6 col-md-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Logo_BUMN.svg" alt="BUMN" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--formulir-->
+<section class="contact-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Hubungi Kami</h2>
+            <p class="text-muted">Hubungi kami untuk informasi lebih lanjut</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="contact-card">
+                    <div class="col-md-4 info-sidebar">
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <h6>Lokasi Kami</h6>
+                                <p>Jl. Mercusuar Raya, Jakarta Selatan</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-phone"></i></div>
+                            <div class="info-text">
+                                <h6>Telephone</h6>
+                                <p>+85999345456</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h6>Email</h6>
+                                <p>smkdigital@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 form-container">
+                        <span class="form-subtitle">BUTUH BANTUAN?</span>
+                        <h3 class="form-title">Kirim Pesan</h3>
+                        
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Masukkan Nama">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Masukkan Email">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Masukkan Subjek">
+                            <textarea class="form-control" rows="3" placeholder="Pesan"></textarea>
+                            
+                            <button type="submit" class="btn btn-primary btn-kirim">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-4">
+  © 2025 SMK DIGITAL
+</footer>
+
+
+</body>
+</html>
